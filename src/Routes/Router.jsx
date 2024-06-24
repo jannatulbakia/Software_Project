@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import Destination from "../Pages/Destination/Destination";
 import Contacts from "../Pages/Contacts/Contacts";
 import SignUp from "../Pages/Signup/SignUp";
+import HomeCalender from "../Pages/Home/HomeCalender";
 
 
 export const router = createBrowserRouter([
@@ -26,7 +27,12 @@ export const router = createBrowserRouter([
             {
                 path:"/contact",
                 element:<Contacts/>,
+            },
+            {
+                path:"/homecalendar",
+                element:<HomeCalender/>,
             }
+
 
         ]
     }
