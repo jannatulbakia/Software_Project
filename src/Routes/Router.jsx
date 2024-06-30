@@ -5,6 +5,7 @@ import Destination from "../Pages/Destination/Destination";
 import Contacts from "../Pages/Contacts/Contacts";
 import SignUp from "../Pages/Signup/SignUp";
 import HomeCalender from "../Pages/Home/HomeCalender";
+import Helplines from "../Pages/Helplines/Helplines";
 
 
 export const router = createBrowserRouter([
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
             {
                 path:"/contact",
                 element:<Contacts/>,
+            },
+            {
+                path:"/helplines",
+                element:<Helplines/>,
             },
             {
                 path:"/homecalendar",

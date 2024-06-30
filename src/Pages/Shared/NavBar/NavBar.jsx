@@ -44,24 +44,36 @@ const NavBar = () => {
                         <li><Link className="btn btn-outline btn-success" to='/'>Home</Link></li>
                         <li> <Link className="btn btn-outline btn-success" to='/destination'>Destination</Link></li>
                         <li><Link className="btn btn-outline btn-success" to='/contact'>Contacts</Link></li>
+                        <li><Link className="btn btn-outline btn-success" to='/helplines'>Helplines</Link></li>
 
                     </ul>
                 </div>
+                <div className="form-control">
+                    <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+                </div>
+                
+                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                        <div className="w-10 rounded-full">
+                            <img
+                                alt="Tailwind CSS Navbar component"
+                                src="logo.jpg" />
+                        </div>
+                    </div>
 
-                <div className="navbar-end">
-                    <li>
-                        <details>
-                            <summary>Register</summary>
-                            <ul className="p-2">
-                                <li><Link className="btn btn-outline btn-success" to="login">Login</Link></li>
-                                <li><Link className="btn btn-outline btn-success" to="signup">Sign up</Link></li>
-                            </ul>
-                        </details>
-                    </li>
+                    <div className="navbar-end">
+                        <li>
+                            <details>
+                                <summary>Register</summary>
+                                <ul className="p-2">
+                                    <li><Link className="btn btn-outline btn-success" to="login">Login</Link></li>
+                                    <li><Link className="btn btn-outline btn-success" to="signup">Sign up</Link></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+            );
 };
 
-export default NavBar;
+            export default NavBar;
