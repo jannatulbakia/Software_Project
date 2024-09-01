@@ -7,6 +7,7 @@ import SignUp from "../Pages/Signup/SignUp";
 import HomeCalender from "../Pages/Home/HomeCalender";
 import Helplines from "../Pages/Helplines/Helplines";
 import Login from "../Pages/Login/Login";
+import HomeMain from "../Pages/Home/HomeMain";
 
 
 export const router = createBrowserRouter([
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
             {
                 path:"/homecalendar",
                 element:<HomeCalender/>,
+            },
+            {
+                path:"/homemain",
+                element:<HomeMain/>,
             }
 
 
